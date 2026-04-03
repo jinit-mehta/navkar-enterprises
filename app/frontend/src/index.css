@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 248 97% 97%;
+        --foreground: 0 0% 4%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 4%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 4%;
+        --primary: 43 93% 39%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 217 91% 60%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 0 0% 40%;
+        --muted-foreground: 0 0% 40%;
+        --accent: 43 93% 39%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 8% / 0.08;
+        --input: 0 0% 8% / 0.08;
+        --ring: 43 93% 39%;
+        --radius: 0.5rem;
+    }
+    
+    .dark {
+        --background: 0 0% 4%;
+        --foreground: 0 0% 96%;
+        --card: 0 0% 7%;
+        --card-foreground: 0 0% 96%;
+        --popover: 0 0% 7%;
+        --popover-foreground: 0 0% 96%;
+        --primary: 43 70% 59%;
+        --primary-foreground: 0 0% 4%;
+        --secondary: 217 91% 60%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 0 0% 53%;
+        --muted-foreground: 0 0% 53%;
+        --accent: 43 70% 59%;
+        --accent-foreground: 0 0% 4%;
+        --destructive: 0 63% 31%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 100% / 0.08;
+        --input: 0 0% 100% / 0.08;
+        --ring: 43 70% 59%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Clash Display', sans-serif;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+
+/* Custom animations */
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+}
+
+/* Smooth transitions for theme toggle */
+* {
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Disable transitions on page load */
+.preload * {
+    transition: none !important;
+}
