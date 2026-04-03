@@ -62,8 +62,9 @@ const ContactPage = () => {
   return (
     <div data-testid="contact-page" className="min-h-screen bg-background">
       <Helmet>
-        <title>Contact Us | Navkar Enterprises</title>
-        <meta name="description" content="Get in touch with Navkar Enterprises in Mumbai for high-quality industrial bearing supplies, pricing quotes, and bulk orders." />
+        <title>Contact Navkar Enterprises in Mumbai | Bearing Quotes & Inquiries</title>
+        <meta name="description" content="Get custom quotes on SKF, FAG, NSK & Timken bearings today. Visit Navkar Enterprises at Nagdevi Street, Mumbai or reach out via WhatsApp and email." />
+        <meta name="keywords" content="Navkar Enterprises Mumbai address, Contact bearing supplier Mumbai, Nagdevi Street bearing dealers, Bearing distributor phone number, SKF bearings quote" />
       </Helmet>
       
       {/* Hero Section */}

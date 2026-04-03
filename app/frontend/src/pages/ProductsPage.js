@@ -97,8 +97,9 @@ const ProductsPage = () => {
   return (
     <div data-testid="products-page" className="min-h-screen bg-background">
       <Helmet>
-        <title>Premium Bearing Products | Navkar Enterprises</title>
-        <meta name="description" content="Explore our extensive range of high-quality ball bearings, roller bearings, and mounted units from top brands like SKF, FAG, and NSK." />
+        <title>Industrial Bearing Products | Ball, Roller & Mounted Units | Navkar Enterprises</title>
+        <meta name="description" content="Wide range of industrial bearings including Deep Groove Ball Bearings, Tapered Roller, Spherical Roller, Pillow Block & Thrust Bearings from brands like SKF, FAG, and NSK." />
+        <meta name="keywords" content="Deep Groove Ball Bearing, Tapered Roller Bearing, Pillow Block Bearing, Spherical Roller Bearing, Needle Roller Bearing, Cylindrical Roller Bearing, Thrust bearing, SKF bearings, FAG bearings catalogue" />
       </Helmet>
 
       {/* Hero */}

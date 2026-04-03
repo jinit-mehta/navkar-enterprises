@@ -17,8 +17,9 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <Helmet>
-        <title>Navkar Enterprises | Premium Bearing Supplier & Stockist</title>
-        <meta name="description" content="Navkar Enterprises is a leading supplier and stockist of premium bearings. We supply SKF, FAG, TIMKEN, NSK, and more with 20+ years of industrial experience." />
+        <title>Navkar Enterprises | Top Bearing Supplier & Importer in Mumbai</title>
+        <meta name="description" content="Navkar Enterprises is Mumbai's leading industrial bearing supplier and stockist. We distribute top brands like SKF, FAG, NSK, TIMKEN, and NTN across India at wholesale prices." />
+        <meta name="keywords" content="Best bearing supplier in Mumbai, Bearing distributor India, SKF dealer, FAG stockist, NSK importer, Industrial bearings, Wholesale bearing dealers" />
       </Helmet>
       <Hero />
       <BrandsMarquee />

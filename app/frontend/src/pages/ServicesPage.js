@@ -61,8 +61,9 @@ const ServicesPage = () => {
   return (
     <div data-testid="services-page" className="min-h-screen bg-background">
       <Helmet>
-        <title>Our Services | Navkar Enterprises</title>
-        <meta name="description" content="Navkar Enterprises offers pan-India bulk bearing wholesale, custom sourcing, technical consultation, and logistics for all industrial bearings." />
+        <title>Bearing Solutions & Supply Logistics | Navkar Enterprises</title>
+        <meta name="description" content="Pan-India wholesale bearing supply, rare custom bearing sourcing, technical consultation, and annual maintenance contracts for industrial machinery." />
+        <meta name="keywords" content="Wholesale bearing supply India, Custom bearing sourcing, Bearing technical consultation, Industrial bearing delivery, Bearing logistics Mumbai" />
       </Helmet>
 
       {/* Hero Section */}
