@@ -1,2 +1,2 @@
-Live Website
-https://navkarenterprises.netlify.app/
+Navkar Enterprises
+Live website: https://navkarenterprises.netlify.app/
