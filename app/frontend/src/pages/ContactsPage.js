@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, CheckCircle2 } from "lucide-react";
 import Footer from "../components/Footer";
@@ -60,6 +61,10 @@ const ContactPage = () => {
 
   return (
     <div data-testid="contact-page" className="min-h-screen bg-background">
+      <Helmet>
+        <title>Contact Us | Navkar Enterprises</title>
+        <meta name="description" content="Get in touch with Navkar Enterprises in Mumbai for high-quality industrial bearing supplies, pricing quotes, and bulk orders." />
+      </Helmet>
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-card">

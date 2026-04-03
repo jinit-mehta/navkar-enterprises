@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowRight, Filter } from "lucide-react";
 import Footer from "../components/Footer";
@@ -95,6 +96,10 @@ const ProductsPage = () => {
 
   return (
     <div data-testid="products-page" className="min-h-screen bg-background">
+      <Helmet>
+        <title>Premium Bearing Products | Navkar Enterprises</title>
+        <meta name="description" content="Explore our extensive range of high-quality ball bearings, roller bearings, and mounted units from top brands like SKF, FAG, and NSK." />
+      </Helmet>
 
       {/* Hero */}
       <section className="pt-32 pb-16 bg-card">

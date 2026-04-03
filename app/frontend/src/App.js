@@ -8,6 +8,8 @@ import ServicesPage from './pages/ServicesPage';
 import ContactsPage from './pages/ContactsPage';
 import './App.css';
 
+import { HelmetProvider } from 'react-helmet-async';
+
 function App() {
   useEffect(() => {
     // Remove preload class after initial load
@@ -15,19 +17,21 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider>
-      <BrowserRouter>
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/contact" element={<ContactsPage />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <BrowserRouter>
+          <div className="App">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/products" element={<ProductsPage />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/contact" element={<ContactsPage />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </ThemeProvider>
+    </HelmetProvider>
   );
 }
 

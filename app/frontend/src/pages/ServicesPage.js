@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import {
   Package,
   Search,
@@ -59,6 +60,11 @@ const ServicesPage = () => {
 
   return (
     <div data-testid="services-page" className="min-h-screen bg-background">
+      <Helmet>
+        <title>Our Services | Navkar Enterprises</title>
+        <meta name="description" content="Navkar Enterprises offers pan-India bulk bearing wholesale, custom sourcing, technical consultation, and logistics for all industrial bearings." />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-card relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
